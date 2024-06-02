@@ -18,11 +18,18 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Check npm version
+        run: npm --version
+
       - name: Install dependencies
-        run: cd portfolio && npm install
+        run: |
+          cd portfolio
+          npm install --verbose
 
       - name: Build project
-        run: cd portfolio && npm run build
+        run: |
+          cd portfolio
+          npm run build
 
       - name: Deploy to S3
         env:
