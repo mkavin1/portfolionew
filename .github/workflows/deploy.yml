@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          path: portfolio # Specify the directory where the repository should be checked out
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
