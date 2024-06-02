@@ -24,3 +24,20 @@ function Resume() {
 }
 
 export default Resume;
+// Resume.js
+import React, { Fragment } from 'react';
+import { SiCodechef, SiHackerrank } from 'react-icons/si';
+
+function Resume() {
+  // Remove unused variable assignments
+  // const unusedSiCodechef = SiCodechef;
+  // const unusedSiHackerrank = SiHackerrank;
+
+  return (
+    <Fragment>
+      {/* Your Resume component JSX */}
+    </Fragment>
+  );
+}
+
+export default Resume;
