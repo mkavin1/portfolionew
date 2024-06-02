@@ -19,10 +19,10 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: npm install
+        run: cd portfolio && npm install
 
       - name: Build project
-        run: npm run build
+        run: cd portfolio && npm run build
 
       - name: Deploy to S3
         env:
@@ -32,4 +32,4 @@ jobs:
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
         run: |
           npm install -g aws-cli
-          aws s3 sync build/ s3://$S3_BUCKET_NAME --delete
+          aws s3 sync portfolio/build/ s3://$S3_BUCKET_NAME --delete
