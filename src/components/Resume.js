@@ -2,10 +2,6 @@ import React, { Fragment } from 'react';
 import { SiCodechef, SiHackerrank } from 'react-icons/si';
 
 function Resume() {
-  // Define unused variables to avoid ESLint errors
-  const unusedSiCodechef = SiCodechef;
-  const unusedSiHackerrank = SiHackerrank;
-
   return (
     <Fragment>
       <div className="col p-4">
@@ -19,23 +15,6 @@ function Resume() {
           {/* Rest of your JSX code */}
         </div>
       </div>
-    </Fragment>
-  );
-}
-
-export default Resume;
-// Resume.js
-import React, { Fragment } from 'react';
-import { SiCodechef, SiHackerrank } from 'react-icons/si';
-
-function Resume() {
-  // Remove unused variable assignments
-  // const unusedSiCodechef = SiCodechef;
-  // const unusedSiHackerrank = SiHackerrank;
-
-  return (
-    <Fragment>
-      {/* Your Resume component JSX */}
     </Fragment>
   );
 }
